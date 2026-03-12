@@ -20,13 +20,29 @@ lint:
 	chktex $(CHKTEX_FLAGS) $(TEX)
 
 ## preview: Build then open PDF in mupdf (lightweight terminal-adjacent viewer)
-preview: build
-	mupdf $(OUTDIR)/$(PDF)
+VIEWER := $(or $(shell command -v mupdf-gl 2>/dev/null), \
+               $(shell command -v mupdf-x11 2>/dev/null), \
+               $(shell command -v mupdf 2>/dev/null), \
+               $(shell command -v xdg-open 2>/dev/null))
 
-## watch: Auto-rebuild whenever the .tex or .cls file changes (requires entr)
+# Dark mode: invert all colors. Override: make preview DARK=0
+DARK ?= 1
+VIEWER_FLAGS = $(if $(filter 1,$(DARK)),-I)
+
+preview: build
+	@test -n "$(VIEWER)" || (echo "No PDF viewer found. Run: make install-deps"; exit 1)
+	$(VIEWER) $(VIEWER_FLAGS) $(OUTDIR)/$(PDF)
+
+VIEWER_PID := /tmp/.resume-viewer.pid
+
+## watch: Auto-rebuild+preview on change; reuses the viewer window instead of stacking new ones
 watch:
 	@echo "Watching $(TEX) and $(CLS) for changes… (Ctrl-C to stop)"
-	ls $(TEX) $(CLS) | entr -c $(MAKE) build
+	@test -n "$(VIEWER)" || (echo "No PDF viewer found. Run: make install-deps"; exit 1)
+	@ls $(TEX) $(CLS) | entr -c -s '\
+		$(MAKE) build && \
+		{ [ -f $(VIEWER_PID) ] && kill $$(cat $(VIEWER_PID)) 2>/dev/null; true; } && \
+		{ $(VIEWER) $(VIEWER_FLAGS) $(OUTDIR)/$(PDF) & echo $$! > $(VIEWER_PID); }'
 
 ## clean: Remove build artifacts
 clean:
