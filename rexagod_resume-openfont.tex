@@ -1,18 +1,41 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.2 (16/9/2014)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%     URLs
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\emailUrl}{mailto:rexagod@gmail.com}
+\newcommand{\githubProfileUrl}{https://github.com/rexagod}
+\newcommand{\linkedinProfileUrl}{https://www.linkedin.com/in/rexagod/}
+\newcommand{\laMartiniereUrl}{https://en.wikipedia.org/wiki/La_Martinière\_College,\_Lucknow}
+\newcommand{\dynamicCardinalityEnforcementUrl}{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/2305-metrics-cardinality-enforcement}
+\newcommand{\customMetricsGaUrl}{https://github.com/kubernetes/enhancements/tree/a9fe435dc53da2100ed90da42d7e580c94c44643/keps/sig-instrumentation/5270-graduate-custom-metrics-k8s-io-to-stable}
+\newcommand{\externalMetricsGaUrl}{https://github.com/kubernetes/enhancements/blob/21e3173499490d191101aa76b73141fbe8c7e79d/keps/sig-instrumentation/5271-graduate-external-metrics-k8s-io-to-stable/README.md}
+\newcommand{\resourceStateMetricsUrl}{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/4785-resource-state-metrics}
+\newcommand{\metricsCollectionProfilesUrl}{https://github.com/openshift/enhancements/blob/59019872f460a48b7450bf2e6780646eb1de0263/enhancements/monitoring/metrics-collection-profiles.md}
+\newcommand{\optionalMonitoringCapabilityUrl}{https://github.com/rexagod/openshift-enhancements/blob/6759c7222cf67f5d22b9856fd2beaf1abf239656/enhancements/monitoring/optional-monitoring-capability.md}
+\newcommand{\kubeConEuropeSpeakerUrl}{https://www.credly.com/badges/86e90781-69ea-43e2-b9a3-bccf4d4fafdf}
+\newcommand{\kubeConChinaSpeakerUrl}{https://www.credly.com/badges/4563248e-0e7e-4884-88b6-e5e253b3f99c}
+\newcommand{\kubeConIndiaSpeakerUrl}{https://www.credly.com/badges/7cc1bbd1-2749-429e-9c40-aefb612bcfd7}
+\newcommand{\kubeConEuropeMaintainerUrl}{https://www.credly.com/badges/c6fd7e69-98ee-4647-bc81-f94337a11e21}
+\newcommand{\cncfAmbassadorUrl}{https://www.credly.com/badges/6df1c87c-44c8-4193-bc9d-40999774949f}
+\newcommand{\publicLabPeopleUrl}{https://github.com/orgs/publiclab/people?query=rexagod}
+\newcommand{\kwocIitKgpUrl}{https://kossiitkgp.org/public-files/KWoC/2018-Certificates/KWoC18-Pranshu\%20Srivastava.pdf}
+\newcommand{\winterOfCodeIitPatnaUrl}{https://njackwinterofcode.github.io/certificates/2019/mentors/rexagod.jpg}
+\newcommand{\kubernetesChairUrl}{https://github.com/kubernetes/community/pull/7664}
+\newcommand{\sigOwnedSubprojectsUrl}{https://github.com/kubernetes/community/tree/master/sig-instrumentation\#subprojects}
+\newcommand{\prometheusMaintainerUrl}{https://github.com/prometheus/prometheus/pull/18267}
+\newcommand{\nodeExporterUrl}{https://github.com/search?q=repo\%3Aprometheus\%2Fnode\_exporter++author\%3Arexagod\&type=pullrequests}
+\newcommand{\procfsUrl}{https://github.com/search?q=repo\%3Aprometheus\%2Fprocfs+author\%3Arexagod\&type=pullrequests}
+\newcommand{\nodejsEmeritusUrl}{https://github.com/nodejs/node/blob/d9fe28bd6b7836accff5a174ef76f7340bf5e600/README.md?plain=1\#L656-L657}
+\newcommand{\expressHttpTwoCompatibilityUrl}{https://github.com/nodejs/node/issues/29829\#issuecomment-640120532}
+\newcommand{\outreachyMentorUrl}{https://www.outreachy.org/alums/2019-05/\#:~:text=Public\%20Lab,Ruby\%20on\%20Rails}
+\newcommand{\googleCodeInMentorUrl}{https://drive.google.com/file/d/1KjEg\_KpzXxtvtX\_uaaezjhg71jFNi\_Wu/view}
+\newcommand{\gsocStudentUrl}{https://drive.google.com/file/d/13my-I3lO2FR1AWKp0ebkdSk2JDQdt7n\_/view?usp=sharing}
+\newcommand{\matcherUrl}{https://github.com/rexagod/matcher-core?tab=readme-ov-file\#matcher-core-orb-focused-pattern-miner-for-publiclab}
+\newcommand{\publicLabEditorNativeUrl}{https://github.com/publiclab/PublicLab.Editor/pulls?q=is\%3Apr+author\%3Arexagod+is\%3Amerged+sort\%3Acomments-desc}
+\newcommand{\publicLabInlineEditorUrl}{https://github.com/publiclab/inline-markdown-editor}
+\newcommand{\leafletDistortableImageUrl}{https://github.com/publiclab/Leaflet.DistortableImage/pulls?q=is\%3Apr+author\%3Arexagod+is\%3Amerged+sort\%3Acomments-desc}
 
 \documentclass[]{rexagod-resume-openfont}
 \usepackage{fancyhdr}
@@ -27,14 +50,14 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \lastupdated
+\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Pranshu}{Srivastava}{\href{mailto:rexagod@gmail.com}{rexagod@gmail.com} | \href{https://github.com/rexagod}{{\bf GitHub}} | \href{https://www.linkedin.com/in/rexagod/}{{\bf LinkedIn}}}
+\namesection{Pranshu}{Srivastava}{\href{\emailUrl}{rexagod@gmail.com} | \href{\githubProfileUrl}{{\bf GitHub}} | \href{\linkedinProfileUrl}{{\bf LinkedIn}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -54,7 +77,7 @@
 \descript{B.Tech. in Computer Science and Engineering (Honours)}
 Cumulative GPA: \textbf{8.3} | July 2021
 
-\href{https://en.wikipedia.org/wiki/La_Martinière_College,_Lucknow}{\subsection{La Martiniere College}}
+\href{\laMartiniereUrl}{\subsection{La Martiniere College}}
 \descript{Indian School Certificate Board}
 Cumulative \%age: \textbf{92\%} | May 2017
 
@@ -76,13 +99,13 @@ Cumulative \%age: \textbf{92\%} | May 2017
 
 \section{Publications}
 \textbf{KEPs} \\
-\textbullet{} \href{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/2305-metrics-cardinality-enforcement}{Dynamic Cardinality Enforcement} \\
-\textbullet{} \href{https://github.com/kubernetes/enhancements/tree/a9fe435dc53da2100ed90da42d7e580c94c44643/keps/sig-instrumentation/5270-graduate-custom-metrics-k8s-io-to-stable}{GA \emph{custom.metrics.k8s.io}} \\
-\textbullet{} \href{https://github.com/kubernetes/enhancements/blob/21e3173499490d191101aa76b73141fbe8c7e79d/keps/sig-instrumentation/5271-graduate-external-metrics-k8s-io-to-stable/README.md}{GA \emph{external.metrics.k8s.io}} \\
-\textbullet{} \href{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/4785-resource-state-metrics}{Resource State Metrics} \\
+\textbullet{} \href{\dynamicCardinalityEnforcementUrl}{Dynamic Cardinality Enforcement} \\
+\textbullet{} \href{\customMetricsGaUrl}{GA \emph{custom.metrics.k8s.io}} \\
+\textbullet{} \href{\externalMetricsGaUrl}{GA \emph{external.metrics.k8s.io}} \\
+\textbullet{} \href{\resourceStateMetricsUrl}{Resource State Metrics} \\
 \textbf{OEPs} \\
-\textbullet{} \href{https://github.com/openshift/enhancements/blob/59019872f460a48b7450bf2e6780646eb1de0263/enhancements/monitoring/metrics-collection-profiles.md}{Metrics Collection Profiles} \\
-\textbullet{} \href{https://github.com/rexagod/openshift-enhancements/blob/6759c7222cf67f5d22b9856fd2beaf1abf239656/enhancements/monitoring/optional-monitoring-capability.md}{Optional Monitoring Capability} \\
+\textbullet{} \href{\metricsCollectionProfilesUrl}{Metrics Collection Profiles} \\
+\textbullet{} \href{\optionalMonitoringCapabilityUrl}{Optional Monitoring Capability} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -102,13 +125,13 @@ Cumulative \%age: \textbf{92\%} | May 2017
 
 \section{Certifications}
 \textbf{Program Committee Member} \\
-\textbullet{} \href{https://www.credly.com/badges/86e90781-69ea-43e2-b9a3-bccf4d4fafdf}{KubeCon + CloudNativeCon Europe} \\
-\textbullet{} \href{https://www.credly.com/badges/4563248e-0e7e-4884-88b6-e5e253b3f99c}{KubeCon + CloudNativeCon China} \\
-\textbullet{} \href{https://www.credly.com/badges/7cc1bbd1-2749-429e-9c40-aefb612bcfd7}{KubeCon + CloudNativeCon India} \\
+\textbullet{} \href{\kubeConEuropeSpeakerUrl}{KubeCon + CloudNativeCon Europe} \\
+\textbullet{} \href{\kubeConChinaSpeakerUrl}{KubeCon + CloudNativeCon China} \\
+\textbullet{} \href{\kubeConIndiaSpeakerUrl}{KubeCon + CloudNativeCon India} \\
 \textbf{Speaker} \\
-\textbullet{} \href{https://www.credly.com/badges/c6fd7e69-98ee-4647-bc81-f94337a11e21}{KubeCon + CloudNativeCon Europe} \\
+\textbullet{} \href{\kubeConEuropeMaintainerUrl}{KubeCon + CloudNativeCon Europe} \\
 \textbf{Ambassador} \\
-\textbullet{} \href{https://www.credly.com/badges/6df1c87c-44c8-4193-bc9d-40999774949f}{CNCF Ambassador - H1 cohort} \\
+\textbullet{} \href{\cncfAmbassadorUrl}{CNCF Ambassador - H1 cohort} \\
 \textbf{Recipient} \\
 \textbullet{} D.N. Shukla award for Mathematics, La Martiniere College, Lucknow, India \\
 
@@ -118,10 +141,10 @@ Cumulative \%age: \textbf{92\%} | May 2017
 
 \section{Volunteering}
 \textbf{Emeritus} \\
-\textbullet{} \href{https://github.com/orgs/publiclab/people?query=rexagod}{The Public Laboratory for Open Technology and Science, USA} \\
+\textbullet{} \href{\publicLabPeopleUrl}{The Public Laboratory for Open Technology and Science, USA} \\
 \textbf{Mentor} \\
-\textbullet{} \href{https://kossiitkgp.org/public-files/KWoC/2018-Certificates/KWoC18-Pranshu\%20Srivastava.pdf}{Winter of Code, IIT Kharagpur, India} \\
-\textbullet{} \href{https://njackwinterofcode.github.io/certificates/2019/mentors/rexagod.jpg}{Winter of Code, IIT Patna, India}
+\textbullet{} \href{\kwocIitKgpUrl}{Winter of Code, IIT Kharagpur, India} \\
+\textbullet{} \href{\winterOfCodeIitPatnaUrl}{Winter of Code, IIT Patna, India}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -150,34 +173,34 @@ Cumulative \%age: \textbf{92\%} | May 2017
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://github.com/kubernetes/community/pull/7664}{K\MakeLowercase{ubernetes}}}
+\runsubsection{\href{\kubernetesChairUrl}{K\MakeLowercase{ubernetes}}}
 \descript{|\space\space SIG Instrumentation Chair}
 \location{November 2022 – Present}
 \begin{tightemize}
-\item Special Interest Group (SIG) Instrumentation Chair, responsible for leading technical discussions, architectural decisions, and feature development across \href{https://github.com/kubernetes/community/tree/master/sig-instrumentation\#subprojects}{\emph{SIG-owned sub-projects}} and Kubernetes Instrumentation APIs.
+\item Special Interest Group (SIG) Instrumentation Chair, responsible for leading technical discussions, architectural decisions, and feature development across \href{\sigOwnedSubprojectsUrl}{\emph{SIG-owned sub-projects}} and Kubernetes Instrumentation APIs.
 \item Spearheaded architectural proposals and enhancement efforts; authored and reviewed multiple KEPs while reviving and guiding contributions to historically under-maintained or dormant components.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://github.com/prometheus/prometheus/pull/18267}{P\MakeLowercase{rometheus}}}
+\runsubsection{\href{\prometheusMaintainerUrl}{P\MakeLowercase{rometheus}}}
 \descript{|\space\space Maintainer}
 \location{November 2022 – Present}
 \begin{tightemize}
 \item Primarily responsible for overseeing the development and maintanance of all Kubernetes-related features in Prometheus, particularly those related to Kubernetes Service Discovery.
-\item Also contributed extensively to \href{https://github.com/search?q=repo\%3Aprometheus\%2Fnode_exporter++author\%3Arexagod&type=pullrequests}{node_exporter} and \href{https://github.com/search?q=repo\%3Aprometheus\%2Fprocfs+author\%3Arexagod&type=pullrequests}{procfs}, and played a key role in triaging issues and stabilizing CI pipelines across the project.
+\item Also contributed extensively to \href{\nodeExporterUrl}{\emph{node\_exporter}} and \href{\procfsUrl}{\emph{procfs}}, and played a key role in triaging issues and stabilizing CI pipelines across the project.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://github.com/nodejs/node/blob/d9fe28bd6b7836accff5a174ef76f7340bf5e600/README.md?plain=1\#L656-L657}{N\MakeLowercase{ode.js}}}
+\runsubsection{\href{\nodejsEmeritusUrl}{N\MakeLowercase{ode.js}}}
 \descript{|\space\space Emeritus}
 \location{July 2020 – July 2022}
 \begin{tightemize}
 \item Contributed to core Node.js modules including Buffer, Streams, HTTP/1, HTTP/2, Readline, and URL as part of the HTTP, Streams, and Testing Working Groups.
-\item Collaborated with Express.js maintainers to \href{https://github.com/nodejs/node/issues/29829\#issuecomment-640120532}{\emph{extend HTTP/2 compatibility}} and played a key role in triaging core module issues and stabilizing CI pipelines.
+\item Collaborated with Express.js maintainers to \href{\expressHttpTwoCompatibilityUrl}{\emph{extend HTTP/2 compatibility}} and played a key role in triaging core module issues and stabilizing CI pipelines.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://www.outreachy.org/alums/2019-05/\#:~:text=Public\%20Lab,Ruby\%20on\%20Rails}{O\MakeLowercase{utreachy}}}
+\runsubsection{\href{\outreachyMentorUrl}{O\MakeLowercase{utreachy}}}
 \descript{|\space\space Mentor}
 \location{May 2019 – Aug 2019}
 \begin{tightemize}
@@ -186,7 +209,7 @@ Cumulative \%age: \textbf{92\%} | May 2017
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://drive.google.com/file/d/1KjEg_KpzXxtvtX_uaaezjhg71jFNi_Wu/view}{G\MakeLowercase{oogle} C\MakeLowercase{ode}-I\MakeLowercase{n}}}
+\runsubsection{\href{\googleCodeInMentorUrl}{G\MakeLowercase{oogle} C\MakeLowercase{ode}-I\MakeLowercase{n}}}
 \descript{|\space\space Mentor}
 \location{Dec 2019 – Jan 2020}
 \begin{tightemize}
@@ -195,12 +218,12 @@ Cumulative \%age: \textbf{92\%} | May 2017
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://drive.google.com/file/d/13my-I3lO2FR1AWKp0ebkdSk2JDQdt7n_/view?usp=sharing}{G\MakeLowercase{oogle} S\MakeLowercase{ummer of} C\MakeLowercase{ode}}}
+\runsubsection{\href{\gsocStudentUrl}{G\MakeLowercase{oogle} S\MakeLowercase{ummer of} C\MakeLowercase{ode}}}
 \descript{|\space\space Student}
 \location{May 2019 – Aug 2019}
 \begin{tightemize}
-\item Developed \href{https://github.com/rexagod/matcher-core?tab=readme-ov-file\#matcher-core-orb-focused-pattern-miner-for-publiclab}{\texttt{matcher}}, a stream-based image processing library and CLI utility for image-to-image and video matching. Also contributed to PublicLab’s \href{https://github.com/publiclab/PublicLab.Editor/pulls?q=is\%3Apr+author\%3Arexagod+is\%3Amerged+sort\%3Acomments-desc}{\emph{native}} and \href{https://github.com/publiclab/inline-markdown-editor}{\emph{inline}} WYSIWYG editors.
-\item Implemented key features including metadata extraction, automated geo-positioning, and Google Mutant integration, enabling the next major release of \href{https://github.com/publiclab/Leaflet.DistortableImage/pulls?q=is\%3Apr+author\%3Arexagod+is\%3Amerged+sort\%3Acomments-desc}{\emph{Leaflet.DistortableImage}}.
+\item Developed \href{\matcherUrl}{\texttt{matcher}}, a stream-based image processing library and CLI utility for image-to-image and video matching. Also contributed to PublicLab’s \href{\publicLabEditorNativeUrl}{\emph{native}} and \href{\publicLabInlineEditorUrl}{\emph{inline}} WYSIWYG editors.
+\item Implemented key features including metadata extraction, automated geo-positioning, and Google Mutant integration, enabling the next major release of \href{\leafletDistortableImageUrl}{\emph{Leaflet.DistortableImage}}.
 \end{tightemize}
 \sectionsep
 
