@@ -1,42 +1,50 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     URLs
+%     URLs (ordered by first occurrence in the resume)
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\emailUrl}{mailto:rexagod@gmail.com}
-\newcommand{\githubProfileUrl}{https://github.com/rexagod}
-\newcommand{\linkedinProfileUrl}{https://www.linkedin.com/in/rexagod/}
-\newcommand{\laMartiniereUrl}{https://en.wikipedia.org/wiki/La_Martinière\_College,\_Lucknow}
-\newcommand{\dynamicCardinalityEnforcementUrl}{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/2305-metrics-cardinality-enforcement}
-\newcommand{\customMetricsGaUrl}{https://github.com/kubernetes/enhancements/tree/a9fe435dc53da2100ed90da42d7e580c94c44643/keps/sig-instrumentation/5270-graduate-custom-metrics-k8s-io-to-stable}
-\newcommand{\externalMetricsGaUrl}{https://github.com/kubernetes/enhancements/blob/21e3173499490d191101aa76b73141fbe8c7e79d/keps/sig-instrumentation/5271-graduate-external-metrics-k8s-io-to-stable/README.md}
-\newcommand{\resourceStateMetricsUrl}{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/4785-resource-state-metrics}
-\newcommand{\metricsCollectionProfilesUrl}{https://github.com/openshift/enhancements/blob/59019872f460a48b7450bf2e6780646eb1de0263/enhancements/monitoring/metrics-collection-profiles.md}
-\newcommand{\optionalMonitoringCapabilityUrl}{https://github.com/rexagod/openshift-enhancements/blob/6759c7222cf67f5d22b9856fd2beaf1abf239656/enhancements/monitoring/optional-monitoring-capability.md}
-\newcommand{\kubeConEuropeSpeakerUrl}{https://www.credly.com/badges/86e90781-69ea-43e2-b9a3-bccf4d4fafdf}
-\newcommand{\kubeConChinaSpeakerUrl}{https://www.credly.com/badges/4563248e-0e7e-4884-88b6-e5e253b3f99c}
-\newcommand{\kubeConIndiaSpeakerUrl}{https://www.credly.com/badges/7cc1bbd1-2749-429e-9c40-aefb612bcfd7}
-\newcommand{\kubeConEuropeMaintainerUrl}{https://www.credly.com/badges/c6fd7e69-98ee-4647-bc81-f94337a11e21}
-\newcommand{\cncfAmbassadorUrl}{https://www.credly.com/badges/6df1c87c-44c8-4193-bc9d-40999774949f}
-\newcommand{\publicLabPeopleUrl}{https://github.com/orgs/publiclab/people?query=rexagod}
-\newcommand{\kwocIitKgpUrl}{https://kossiitkgp.org/public-files/KWoC/2018-Certificates/KWoC18-Pranshu\%20Srivastava.pdf}
-\newcommand{\winterOfCodeIitPatnaUrl}{https://njackwinterofcode.github.io/certificates/2019/mentors/rexagod.jpg}
-\newcommand{\kubernetesChairUrl}{https://github.com/kubernetes/community/pull/7664}
-\newcommand{\sigOwnedSubprojectsUrl}{https://github.com/kubernetes/community/tree/master/sig-instrumentation\#subprojects}
-\newcommand{\prometheusMaintainerUrl}{https://github.com/prometheus/prometheus/pull/18267}
-\newcommand{\nodeExporterUrl}{https://github.com/search?q=repo\%3Aprometheus\%2Fnode\_exporter++author\%3Arexagod\&type=pullrequests}
-\newcommand{\nodeExporterBsdPrUrl}{https://github.com/prometheus/node_exporter/pull/3160/files}
-\newcommand{\procfsUrl}{https://github.com/search?q=repo\%3Aprometheus\%2Fprocfs+author\%3Arexagod\&type=pullrequests}
-\newcommand{\nodejsEmeritusUrl}{https://github.com/nodejs/node/blob/d9fe28bd6b7836accff5a174ef76f7340bf5e600/README.md?plain=1\#L656-L657}
-\newcommand{\expressHttpTwoCompatibilityUrl}{https://github.com/nodejs/node/issues/29829\#issuecomment-640120532}
-\newcommand{\outreachyMentorUrl}{https://www.outreachy.org/alums/2019-05/\#:~:text=Public\%20Lab,Ruby\%20on\%20Rails}
-\newcommand{\googleCodeInMentorUrl}{https://drive.google.com/file/d/1KjEg\_KpzXxtvtX\_uaaezjhg71jFNi\_Wu/view}
-\newcommand{\gsocStudentUrl}{https://drive.google.com/file/d/13my-I3lO2FR1AWKp0ebkdSk2JDQdt7n\_/view?usp=sharing}
-\newcommand{\matcherUrl}{https://github.com/rexagod/matcher-core?tab=readme-ov-file\#matcher-core-orb-focused-pattern-miner-for-publiclab}
-\newcommand{\publicLabEditorNativeUrl}{https://github.com/publiclab/PublicLab.Editor/pulls?q=is\%3Apr+author\%3Arexagod+is\%3Amerged+sort\%3Acomments-desc}
-\newcommand{\publicLabInlineEditorUrl}{https://github.com/publiclab/inline-markdown-editor}
-\newcommand{\leafletDistortableImageUrl}{https://github.com/publiclab/Leaflet.DistortableImage/pulls?q=is\%3Apr+author\%3Arexagod+is\%3Amerged+sort\%3Acomments-desc}
+\begingroup
+\catcode`\%=12
+\catcode`\#=12
+\catcode`\_=12
+\catcode`\&=12
+\catcode`\~=12
+\catcode`\^=12
+\gdef\emailUrl{mailto:rexagod@gmail.com}
+\gdef\githubProfileUrl{https://github.com/rexagod}
+\gdef\linkedinProfileUrl{https://www.linkedin.com/in/rexagod/}
+\gdef\laMartiniereUrl{https://en.wikipedia.org/wiki/La_Martinière_College,_Lucknow}
+\gdef\dynamicCardinalityEnforcementUrl{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/2305-metrics-cardinality-enforcement}
+\gdef\customMetricsGaUrl{https://github.com/kubernetes/enhancements/tree/a9fe435dc53da2100ed90da42d7e580c94c44643/keps/sig-instrumentation/5270-graduate-custom-metrics-k8s-io-to-stable}
+\gdef\externalMetricsGaUrl{https://github.com/kubernetes/enhancements/blob/21e3173499490d191101aa76b73141fbe8c7e79d/keps/sig-instrumentation/5271-graduate-external-metrics-k8s-io-to-stable/README.md}
+\gdef\resourceStateMetricsUrl{https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/4785-resource-state-metrics}
+\gdef\metricsCollectionProfilesUrl{https://github.com/openshift/enhancements/blob/59019872f460a48b7450bf2e6780646eb1de0263/enhancements/monitoring/metrics-collection-profiles.md}
+\gdef\optionalMonitoringCapabilityUrl{https://github.com/rexagod/openshift-enhancements/blob/6759c7222cf67f5d22b9856fd2beaf1abf239656/enhancements/monitoring/optional-monitoring-capability.md}
+\gdef\kubeConEuropeSpeakerUrl{https://www.credly.com/badges/86e90781-69ea-43e2-b9a3-bccf4d4fafdf}
+\gdef\kubeConChinaSpeakerUrl{https://www.credly.com/badges/4563248e-0e7e-4884-88b6-e5e253b3f99c}
+\gdef\kubeConIndiaSpeakerUrl{https://www.credly.com/badges/7cc1bbd1-2749-429e-9c40-aefb612bcfd7}
+\gdef\kubeConEuropeMaintainerUrl{https://www.credly.com/badges/c6fd7e69-98ee-4647-bc81-f94337a11e21}
+\gdef\cncfAmbassadorUrl{https://www.credly.com/badges/6df1c87c-44c8-4193-bc9d-40999774949f}
+\gdef\publicLabPeopleUrl{https://github.com/orgs/publiclab/people?query=rexagod}
+\gdef\kwocIitKgpUrl{https://drive.google.com/file/d/1UhT_FRjh24x7bH4PEdLYse2ojctIdomq/view?usp=sharing}
+\gdef\winterOfCodeIitPatnaUrl{https://njackwinterofcode.github.io/certificates/2019/mentors/rexagod.jpg}
+\gdef\kubernetesChairUrl{https://github.com/kubernetes/community/pull/7664}
+\gdef\sigOwnedSubprojectsUrl{https://github.com/kubernetes/community/tree/master/sig-instrumentation#subprojects}
+\gdef\prometheusMaintainerUrl{https://github.com/prometheus/prometheus/pull/18267}
+\gdef\nodeExporterUrl{https://github.com/search?q=repo%3Aprometheus%2Fnode_exporter++author%3Arexagod&type=pullrequests}
+\gdef\nodeExporterBsdPrUrl{https://github.com/prometheus/node_exporter/pull/3160/files}
+\gdef\procfsUrl{https://github.com/search?q=repo%3Aprometheus%2Fprocfs+author%3Arexagod&type=pullrequests}
+\gdef\nodejsEmeritusUrl{https://github.com/nodejs/node/blob/d9fe28bd6b7836accff5a174ef76f7340bf5e600/README.md?plain=1#L656-L657}
+\gdef\expressHttpTwoCompatibilityUrl{https://github.com/nodejs/node/issues/29829#issuecomment-640120532}
+\gdef\outreachyMentorUrl{https://www.outreachy.org/alums/2019-05/#:~:text=Public%20Lab,Ruby%20on%20Rails}
+\gdef\googleCodeInMentorUrl{https://drive.google.com/file/d/1KjEg_KpzXxtvtX_uaaezjhg71jFNi_Wu/view}
+\gdef\gsocStudentUrl{https://drive.google.com/file/d/13my-I3lO2FR1AWKp0ebkdSk2JDQdt7n_/view?usp=sharing}
+\gdef\matcherUrl{https://github.com/rexagod/matcher-core?tab=readme-ov-file#matcher-core-orb-focused-pattern-miner-for-publiclab}
+\gdef\publicLabEditorNativeUrl{https://github.com/publiclab/PublicLab.Editor/pulls?q=is%3Apr+author%3Arexagod+is%3Amerged+sort%3Acomments-desc}
+\gdef\publicLabInlineEditorUrl{https://github.com/publiclab/inline-markdown-editor}
+\gdef\leafletDistortableImageUrl{https://github.com/publiclab/Leaflet.DistortableImage/pulls?q=is%3Apr+author%3Arexagod+is%3Amerged+sort%3Acomments-desc}
+\endgroup
 
 \documentclass[]{rexagod-resume-openfont}
 \usepackage{fancyhdr}
@@ -177,9 +185,9 @@ Cumulative \%age: \textbf{92\%} | May 2017
 \location{July 2021 – Present}
 \vspace{\topsep}
 \begin{tightemize}
-\item Contribute to the development and maintenance of the in-cluster monitoring stack for OpenShift Container Platform on the Monitoring team, including upstream work and cross-team enablement to help internal stakeholders use the platform effectively.
+\item Contribute to the in-cluster monitoring stack for the OpenShift Container Platform, as a part of the Monitoring team, including upstream work and cross-team enablement to help stakeholders use the platform effectively.
 \item Previously worked on the Storage team, focusing on controllers and managed services built on open-source technologies such as Rook and NooBaa.
-\item Earlier, as a Software Engineering Intern (January 2021 to July 2021), contributed to dashboards and operator backends across OpenShift Data Federation, OpenShift Container Storage, and Multi-Cloud Object Gateway.
+\item Earlier, as a Software Engineering Intern (January to July '21), contributed to dashboards and operator backends across OpenShift Data Federation, OpenShift Container Storage, and Multi-Cloud Object Gateway.
 \end{tightemize}
 \sectionsep
 
